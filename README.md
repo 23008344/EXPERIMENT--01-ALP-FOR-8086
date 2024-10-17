@@ -9,11 +9,8 @@ Date of experiment : 13-08-2024
 
 
 
-
-## Aim: 
-To Write and execute ALP on fundamental arithmetic and logical operations
-## Components required: 
-8086  emulator 
+## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
+## Components required: 8086  emulator 
 ## Theory 
 Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as EMU8086, is an emulator of the program 8086 microprocessor. It is developed with a built-in 8086 assembler. This application is able to run programs on both PC desktops and laptops. This tool is primarily designed to copy or emulate hardware. These include the memory of a program, CPU, RAM, input and output devices, and even the display screen. There are instructions to follow when using this emulator. It can be executed into one of the two ways: backward or forward. There are also examples of assembly source code included. With this, it allows the programming of assembly language, reverse engineering, hardware architecture, and creating miniature operating system (OS). The user interface of 8086 Microprocessor Emulator is simple and easy to manage. There are five major buttons with icons and titles included. These are “Load”, “Reload”, “Step Back”, “Single Step”, and “Run”. Above those buttons is the menu that includes “File”, “View”, “Virtual Devices”, “Virtual Drive”, and “Help”. Below the buttons is a series of choices that are usually in numbers and codes. At the leftmost part is an area called “Registers” with an indication of either “H” or “L”. The other side is divided into two, which enables users to manually reset, debug, flag, etc. What is 8086 emulator emu8086 is an emulator of Intel 8086 (AMD compatible) microprocessor with integrated 8086 assembler and tutorials for beginners. Emulator runs programs like the real microprocessor in step-by-step mode. it shows registers, memory, stack, variables and flags.
 
@@ -84,92 +81,74 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 ```
-MOV AL,74H
-MOV BL,69H
-ADD AL,BL
+ORG 100h
+MOV ax,11h;
+MOV bx,20h;
+ADD ax,bx;
 HLT
 ```
-
-
-
 ## Output  
-
-![Screenshot 2024-09-24 083115](https://github.com/user-attachments/assets/ef069dcb-0ccb-44e5-b145-41a3b0cf7c4f)
-
- 
+ ![image](https://github.com/user-attachments/assets/1f8716da-ed9f-4ccf-b657-f08bbe0b4bad)
 ## Subtraction   of 8 bit numbers  ALP 
-```
-MOV AL,84H
-MOV BL,63H
-SUB AL,BL
+ ```
+ ORG 100h
+MOV ax,31h;
+MOV bx,20h;
+SUB ax,bx;
 HLT
-```
- 
-## Output  
-![image](https://github.com/user-attachments/assets/c3459711-b37d-43ea-98c9-84740152f298)
-
+ ```
+## Output 
+ ![image](https://github.com/user-attachments/assets/1901a10a-b120-4287-a28e-13a0027414bd)
 ## Multiplication alp 
 ```
 ORG 100h
-MOV AL,75H
-MOV BL,32H
-MUL BL
+MOV ax,31h;
+MOV bx,20h;
+MUL bx;
 HLT
-RET
 ```
-
-## Output  
-![image](https://github.com/user-attachments/assets/57a1f5e9-ff3d-4bc0-afba-f1532822b674)
-
-
-
+ ## Output  
+![image](https://github.com/user-attachments/assets/9c8ad22d-7a5a-4883-8ff3-8cdce0c0077f)
 ## Division alp 
 ```
-org 100h
-MOV AL,68H
-MOV BL,18H
-DIV BL
+ORG 100h
+MOV ax,10h;
+MOV bx,05h;
+DIV bx;
 HLT
-ret
 ```
-
 ## Output  
-![image](https://github.com/user-attachments/assets/e0912d94-041c-438c-a2a3-c53822d295da)
+![image](https://github.com/user-attachments/assets/292f3adf-bb87-41a9-999b-c458bdeca778)
 
-
-## Programs for Logical  operations
-## Logical OR 
+## Programs for logical operations
+## Logical AND
 ```
-Mov AL,45H
-Mov BL,66H
-OR AL,BL
-HLT
-```
-
-## Output
-![image](https://github.com/user-attachments/assets/7c7cb19d-27c7-4348-8e71-bc5909f1c937)
-
-##  Logical AND
-```
-Mov AL,33H
-Mov BL,44H
+MOV AL,53H
+MOV BL,24H
 AND AL,BL
 HLT
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/8a3de269-ac41-4ceb-a4ec-fb9f717b73c6)
+![image](https://github.com/user-attachments/assets/7cbc943a-39d9-4bfd-99a1-951ae25ceac8)
 
-## Logical NOT
+## Logical OR
+```
+MOV AL,53H
+MOV BL,24H
+OR AL,BL
+HLT
+```
+## Output
+![image](https://github.com/user-attachments/assets/a4112932-17c2-4bfd-9103-bb17d77b6df5)
+
+## Logical NOT 
 ```
 MOV AL,53H
 NOT AL
 HLT
 ```
-
 ## Output
-
-
-![image](https://github.com/user-attachments/assets/7a16fee3-b785-4384-a8a3-6b84a39473eb)
+![image](https://github.com/user-attachments/assets/5ce9b2aa-9cc3-4641-a3d0-a02636aefca0)
 
 ## Logical XOR
 ```
@@ -179,14 +158,11 @@ XOR AL,BL
 HLT
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/6e19457a-549f-4696-971c-346cf443c06d)
-
-
-
-
+![image](https://github.com/user-attachments/assets/25806f01-f75b-4faf-8cc9-0680ec6a8e13)
 
 ## Result :
-Thus, To write and execute ALP on fundamental arithmetic operations is successful.
+ Thus, To write and execute ALP on fundamental arithmetic operations is successful.
+
 
 
 
